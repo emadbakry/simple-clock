@@ -2,8 +2,8 @@
 
 ## HELLO
 
-[view](./assets/p_view.png)
+![view](./assets/p_view.png)
 
 This is a simple non-numral live clock built in only 30 min.
 
-- ![live link](https://emadbakry.github.io/simple-clock/)
+- [live link](https://emadbakry.github.io/simple-clock/)
