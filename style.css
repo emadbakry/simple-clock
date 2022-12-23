@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 15%;
     background-color: #000;
     --color-main:red;
 }
@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.1;
+    transition: 0.4s 0.5s;
 }
 
 .clock_circle {
@@ -17,7 +19,7 @@ body {
     border: 4px solid #fff;
     height: 200px;
     border-radius: 200px;
-    padding:20px;
+    padding:4px;
 }
 
 .clock_circle > div {
@@ -66,4 +68,17 @@ body {
     width: 80px;
     height: 3px;
     transform: translate(0%,-50%) rotate(120deg);
+}
+
+/* about me */
+.link a {
+text-decoration: none;
+color: #7736ff;
+font-weight: 700;
+padding: 10px;
+}
+.link {
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 35px);
 }
