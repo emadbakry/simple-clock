@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    background-color: #000;
+    --color-main:red;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock_circle {
+    position: relative;
+    width: 200px;
+    border: 4px solid #fff;
+    height: 200px;
+    border-radius: 200px;
+    padding:20px;
+}
+
+.clock_circle > div {
+    position: absolute;
+}
+.clock_circle .img_box {
+    width: 200px;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: calc(50% + 2px);
+}
+.clock_circle img {
+    width: 100%;
+}
+.clock_circle .img_box:before {
+    content: "";
+    background-color: var(--color-main);
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 2px);
+    z-index: 3;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+}
+.clock_circle .hand{
+    background-color: red;
+    width: 50px;
+    height: 6px;
+    z-index: 2;
+    border-radius: 20px;
+    left:50%;
+    top: 50%;
+    transition: cubic-bezier(0.1,3,0.48,1) 0.1s;
+    transform: translate(0%,-50%);
+    transform-origin: left;
+    transform-box: fill-box;
+}
+.clock_circle .minute {
+    width: 64px;
+    height: 4px;
+    transform: translate(0%,-50%) rotate(-120deg);
+}
+.clock_circle .second {
+    width: 80px;
+    height: 3px;
+    transform: translate(0%,-50%) rotate(120deg);
+}
